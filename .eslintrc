@@ -12,7 +12,8 @@
     "linebreak-style": "off",
     "quotes": "off",
     "arrow-parens": "off",
-    "operator-linebreak": "off"
+    "operator-linebreak": "off",
+    "semi": "off"
   },
   "extends": [
     "google"
