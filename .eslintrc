@@ -7,7 +7,12 @@
   },
   "rules": {
     "max-len": "off",
-    "require-jsdoc": "off"
+    "require-jsdoc": "off",
+    "indent": "off",
+    "linebreak-style": "off",
+    "quotes": "off",
+    "arrow-parens": "off",
+    "operator-linebreak": "off"
   },
   "extends": [
     "google"
