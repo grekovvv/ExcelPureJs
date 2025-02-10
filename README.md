@@ -1,4 +1,4 @@
-Completed this course (Продвинутый JavaScript. Создание Excel на чистом js)[https://result.school/products/advanced-js]
+Completed this course [Продвинутый JavaScript. Создание Excel на чистом js](https://result.school/products/advanced-js)
 
 Minin is good teacher. Thank you for this course and your youtube.
 
