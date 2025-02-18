@@ -14,7 +14,7 @@ class Dom {
     }
     // реализовал get set
     text(text) {
-        if (typeof text === 'string') {
+        if (typeof text !== "undefined") {
             this.$el.textContent = text;
             return this;
         }
@@ -83,6 +83,13 @@ class Dom {
             })
     }
 
+    getStyles(styles = []) {
+        return styles.reduce((res, s) => {
+            res[s] = this.$el.style[s]
+            return res
+        }, {})
+    }
+
     id(parse) {
         if (parse) {
             const parsed = this.id().split(':')
@@ -92,6 +99,14 @@ class Dom {
             }
         }
         return this.data.id
+    }
+
+    attr(name, value) {
+        if (value) {
+            this.$el.setAttribute(name, value)
+            return this
+        }
+        return this.$el.getAttribute(name)
     }
 
     addClass(className) {
