@@ -13,7 +13,8 @@
     "quotes": "off",
     "arrow-parens": "off",
     "operator-linebreak": "off",
-    "semi": "off"
+    "semi": "off",
+    "comma-dangle": "off"
   },
   "extends": [
     "google"
