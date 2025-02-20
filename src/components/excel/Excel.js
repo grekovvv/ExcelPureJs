@@ -1,11 +1,13 @@
 import {$} from "@/core/dom";
 import {Emitter} from "@/core/Emitter";
 import {StoreSubscriber} from "@/core/StoreSubscriber";
+import {preventDefault} from "@/core/utils";
+import {updateDate} from "@/redux/actions";
 
 export class Excel {
-    constructor(selector, options) {
+    constructor(options) {
         // $ в названии для удобства, чтобы понимать, что переменная есть элемент разметки.
-        this.$el = $(selector);
+        // this.$el = $(selector);
         this.components = options.components || [];
         this.store = options.store;
         this.emitter = new Emitter();
@@ -29,15 +31,15 @@ export class Excel {
         return $root;
     }
 
-    render() {
-        this.$el.append(this.getRoot());
+    init() {
+        if (process.env.NODE_ENV === 'production') {
+            document.addEventListener('contextmenu', preventDefault)
+        }
+        this.store.dispatch(updateDate())
         this.subscriber.subscribeComponents(this.components)
-        this.components.forEach(component => component.init());
-        // Можно создавать руками
-        // const node = document.createElement("div");
-        // node.textContent = 'Test';
-        // this.$el.append(node);
+        this.components.forEach(component => component.init())
     }
+
 
     destroy() {
         this.subscriber.unsubscribeFromStore()
