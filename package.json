@@ -1,7 +1,7 @@
 {
   "name": "minincourse",
   "version": "1.0.0",
-  "description": "Minin Course Senior JS",
+  "description": "ExcelPureJs Course Senior JS",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -13,7 +13,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/grekovvv/MininCourse.git"
+    "url": "git+https://github.com/grekovvv/ExcelPureJs.git"
   },
   "keywords": [
     "js",
@@ -22,9 +22,9 @@
   "author": "Vlad Grekov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/grekovvv/MininCourse/issues"
+    "url": "https://github.com/grekovvv/ExcelPureJs/issues"
   },
-  "homepage": "https://github.com/grekovvv/MininCourse#readme",
+  "homepage": "https://github.com/grekovvv/ExcelPureJs#readme",
   "browserslist": "> 0.25%, not dead",
   "devDependencies": {
     "@babel/core": "^7.26.0",
