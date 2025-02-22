@@ -14,4 +14,5 @@ When I passed course, I understood that it is not need you. Realy. If you wanna 
 I'm not recomended this course. Use tutorial for any technologies or language, this be better for you.
 
 But Vladilen, thank you.
-![Timeline 2](https://github.com/user-attachments/assets/b4641c6a-a587-486d-ba38-ee659e863a6e)
+
+![Excel from this course](https://github.com/user-attachments/assets/b4641c6a-a587-486d-ba38-ee659e863a6e)
